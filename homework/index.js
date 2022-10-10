@@ -47,5 +47,11 @@ const toggleImgVisibility = () => {
 toggleImgVisibility();
 
 // EX12: Write a function to color the price of the products in a different one every time it’s invoked
-const price = document.getElementById("price");
-const changePriceColor = () => {};
+const prices = document.querySelectorAll("#price");
+const changePriceColor = () => {
+  const colors = ["red", "yellow", "blue"];
+  for (let i = 0; i < prices.length; i++) {
+    prices[i].style.color = colors[i];
+  }
+};
+changePriceColor();
