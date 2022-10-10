@@ -21,7 +21,31 @@ const changeFooterAddress = () => {
 changeFooterAddress();
 
 // EX10: Write a function to add a CSS class to every Amazon link
+const anchors = document.querySelectorAll("a");
+const addClassToLinks = () => {
+  for (let i = 0; i < anchors.length; i++) {
+    anchors[i].classList.add("anchors-class");
+  }
+};
+addClassToLinks();
 
-// EX11: Write a function to toggle a CSS class for all the images in the table; that class should set the visibility of the image
+// EX11: Write a function to toggle a CSS class for all the images in the table;
+// that class should set the visibility of the image
+const images = document.querySelectorAll("img");
+const imagesClass = () => {
+  for (let i = 0; i < images.length; i++) {
+    images[i].classList.add("visible-images");
+  }
+};
+imagesClass();
+const toggleImgVisibility = () => {
+  for (let i = 0; i < images.length; i++) {
+    images[i].hidden = !images[i].hidden;
+    images[i].classList.toggle("hidden");
+  }
+};
+toggleImgVisibility();
 
 // EX12: Write a function to color the price of the products in a different one every time it’s invoked
+const price = document.getElementById("price");
+const changePriceColor = () => {};

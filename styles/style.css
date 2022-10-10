@@ -24,6 +24,26 @@ th {
   text-align: left;
 }
 
+.btn {
+  display: block;
+  margin: 10px 5px;
+  line-height: 50px;
+  min-width: 120px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #fd310f;
+  border-radius: 5px;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #fe712a;
+}
+
 label,
 textarea {
   font-size: 0.8rem;
@@ -61,3 +81,14 @@ footer {
 footer span {
   font-weight: lighter;
 }
+
+/* JS added classes */
+.anchors-class {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #404040;
+}
+
+/* .visible-images {
+  display: none;
+} */
