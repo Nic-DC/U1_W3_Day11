@@ -8,6 +8,7 @@ body {
   /* height: 100vh; */
   background: lightblue;
   font-size: 0.85rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -25,8 +26,24 @@ footer {
   padding: 1rem 0;
 }
 
-#logo {
-  margin-left: 0.25rem;
+#logo h3 {
+  font-family: "Teko", sans-serif;
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 350ms ease-in-out;
+}
+
+#logo h3:hover {
+  color: #fd310f;
+  transform: scale(1.1);
+}
+
+#logo ion-icon {
+  align-self: flex-start;
+  margin: 0 0.15rem;
 }
 
 .btns-container {
@@ -75,6 +92,12 @@ th {
   width: 100px;
   height: 150px;
   object-fit: contain;
+  cursor: pointer;
+  transition: transform 350ms ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.15);
 }
 
 label,
@@ -86,7 +109,10 @@ textarea {
 label {
   /* margin-top: 2rem; */
   /* font-size: .8rem; */
-  font-weight: bold;
+}
+
+label ion-icon {
+  align-self: center;
 }
 
 textarea {
@@ -103,6 +129,15 @@ textarea {
 label {
   display: block;
   margin-bottom: 10px;
+  display: flex;
+}
+
+label h3 {
+  margin-left: 0.25rem;
+}
+
+.footer-icon {
+  margin-right: 0.25rem;
 }
 
 footer {
@@ -143,6 +178,10 @@ footer span {
   border-radius: 3px;
   padding: 0.25rem 0.5rem;
   line-height: 1.7rem;
+}
+.anchors-class:hover {
+  background: lightblue;
+  border-color: white;
 }
 
 /* Different table */
