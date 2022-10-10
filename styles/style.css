@@ -5,12 +5,54 @@
 body {
   margin: 0;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  background: lightblue;
+  font-size: 0.85rem;
 }
 
 .container {
   width: 90%;
   margin: 0 auto;
+  /* height: 100vh; */
+}
+
+navbar,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: lightblue;
+  padding: 1rem 0;
+}
+
+#logo {
+  margin-left: 0.25rem;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.5rem;
+  min-width: 100px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #fd310f;
+  border-radius: 3px;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btns:hover {
+  background-color: #fe712a;
 }
 
 table {
@@ -22,6 +64,12 @@ th {
   border: 1px solid #999;
   padding: 0.5rem;
   text-align: left;
+}
+
+.image {
+  width: 100px;
+  height: 150px;
+  object-fit: contain;
 }
 
 .btn {
@@ -46,13 +94,13 @@ th {
 
 label,
 textarea {
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: 1px;
 }
 
 label {
-  margin-top: 2rem;
-  font-size: 1.8rem;
+  /* margin-top: 2rem; */
+  /* font-size: .8rem; */
   font-weight: bold;
 }
 
@@ -71,22 +119,42 @@ label {
 }
 
 footer {
-  margin-top: 3rem;
-  height: 3rem;
+  /* height: 5rem; */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem 0;
+}
+
+.footer-textarea {
+  padding-right: 1rem;
+}
+
+.footer-addressAndButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer-addressAndButton .btns {
+  margin: 0;
 }
 
 footer span {
   font-weight: lighter;
+  display: block;
 }
 
 /* JS added classes */
 .anchors-class {
   text-decoration: none;
-  font-size: 1.5rem;
   color: #404040;
+  font-weight: bold;
+  background: wheat;
+  border: 2px solid #404040;
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
 }
 
 /* .visible-images {

@@ -2,23 +2,25 @@
 const h1 = document.querySelector("h1");
 const changeHeader = () => {
   h1.innerText = "Here are Nix's goodies";
+  h1.style.background = "wheat";
 };
-changeHeader();
+// changeHeader();
 
 // EX8: Write a function to change the page background color
-const container = document.querySelector(".container");
+const table = document.querySelector("table");
 const changeBackground = () => {
-  container.style.backgroundColor = "aquamarine";
+  table.style.backgroundColor = "wheat";
 };
-changeBackground();
+// changeBackground();
 
 // EX9: Write a function to change the footer address with a fake one
 const span = document.querySelector("footer span");
 const changeFooterAddress = () => {
   span.innerText =
     "This is the real fake address of the store: Imaginary Road 221";
+  span.style.backgroundColor = "wheat";
 };
-changeFooterAddress();
+// changeFooterAddress();
 
 // EX10: Write a function to add a CSS class to every Amazon link
 const anchors = document.querySelectorAll("a");
@@ -27,7 +29,7 @@ const addClassToLinks = () => {
     anchors[i].classList.add("anchors-class");
   }
 };
-addClassToLinks();
+// addClassToLinks();
 
 // EX11: Write a function to toggle a CSS class for all the images in the table;
 // that class should set the visibility of the image
@@ -44,14 +46,14 @@ const toggleImgVisibility = () => {
     images[i].classList.toggle("hidden");
   }
 };
-toggleImgVisibility();
+// toggleImgVisibility();
 
 // EX12: Write a function to color the price of the products in a different one every time it’s invoked
-const prices = document.querySelectorAll("#price");
+const prices = document.querySelectorAll(".price");
 const changePriceColor = () => {
   const colors = ["red", "yellow", "blue"];
   for (let i = 0; i < prices.length; i++) {
     prices[i].style.color = colors[i];
   }
 };
-changePriceColor();
+// changePriceColor();
