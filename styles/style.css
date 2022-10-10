@@ -23,7 +23,11 @@ footer {
   justify-content: space-between;
   align-items: center;
   background: lightblue;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
+}
+
+navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #logo h3 {
@@ -72,6 +76,10 @@ footer {
   background-color: #fe712a;
 }
 
+main {
+  margin-top: 2rem;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -104,11 +112,6 @@ label,
 textarea {
   font-size: 1rem;
   letter-spacing: 1px;
-}
-
-label {
-  /* margin-top: 2rem; */
-  /* font-size: .8rem; */
 }
 
 label ion-icon {
@@ -146,6 +149,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
+  padding-top: 4rem;
 }
 
 .footer-textarea {
