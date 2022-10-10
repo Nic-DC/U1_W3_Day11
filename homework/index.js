@@ -49,11 +49,21 @@ const toggleImgVisibility = () => {
 // toggleImgVisibility();
 
 // EX12: Write a function to color the price of the products in a different one every time it’s invoked
+const generateRandomColors = () => {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  // const a = Math.random();
+  let color = `rgba(${r}, ${g}, ${b})`; // removed the opacity because it was not that clear
+  return color;
+};
+// console.log(generateRandomColors());
+
 const prices = document.querySelectorAll(".price");
 const changePriceColor = () => {
-  const colors = ["red", "yellow", "blue"];
+  let sameColor = generateRandomColors();
   for (let i = 0; i < prices.length; i++) {
-    prices[i].style.color = colors[i];
+    prices[i].style.color = sameColor;
   }
 };
 // changePriceColor();

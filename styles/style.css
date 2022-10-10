@@ -66,30 +66,15 @@ th {
   text-align: left;
 }
 
+.price {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 .image {
   width: 100px;
   height: 150px;
   object-fit: contain;
-}
-
-.btn {
-  display: block;
-  margin: 10px 5px;
-  line-height: 50px;
-  min-width: 120px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  background-color: #fd310f;
-  border-radius: 5px;
-  color: #fff;
-  border: 0;
-  cursor: pointer;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s ease-in-out;
-}
-
-.btn:hover {
-  background-color: #fe712a;
 }
 
 label,
@@ -105,12 +90,14 @@ label {
 }
 
 textarea {
-  padding: 10px;
-  max-width: 100%;
+  /* padding: 10px;
+  max-width: 100%; */
   line-height: 1.5;
   border-radius: 5px;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px #999;
+  font-size: 0.85rem;
+  color: #999;
 }
 
 label {
@@ -156,7 +143,3 @@ footer span {
   border-radius: 3px;
   padding: 0.25rem 0.5rem;
 }
-
-/* .visible-images {
-  display: none;
-} */
