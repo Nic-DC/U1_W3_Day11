@@ -7,9 +7,11 @@ const changeHeader = () => {
 // changeHeader();
 
 // EX8: Write a function to change the page background color
-const table = document.querySelector("table");
+const tableTHs = document.querySelectorAll("#table th");
 const changeBackground = () => {
-  table.style.backgroundColor = "wheat";
+  for (let i = 0; i < tableTHs.length; i++) {
+    tableTHs[i].style.backgroundColor = "wheat";
+  }
 };
 // changeBackground();
 
